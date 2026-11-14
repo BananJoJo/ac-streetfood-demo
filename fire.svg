@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 440">
+<defs>
+ <linearGradient id="flare" x2=".15" y2="1"><stop stop-color="#ff382b"/><stop offset=".62" stop-color="#ff6326"/><stop offset="1" stop-color="#ffc566"/></linearGradient>
+ <linearGradient id="wrap" x2=".92" y2=".7"><stop stop-color="#ffe3b1"/><stop offset=".55" stop-color="#d39a5a"/><stop offset="1" stop-color="#a45d31"/></linearGradient>
+ <radialGradient id="light"><stop stop-color="#e23222" stop-opacity=".76"/><stop offset="1" stop-color="#ce221b" stop-opacity="0"/></radialGradient>
+ <style>
+ .flame{transform-origin:260px 365px}.inner{transform-origin:295px 355px}
+ @media(prefers-reduced-motion:no-preference){
+ .flame{animation:burn 2.7s ease-in-out infinite alternate}.inner{animation:burn 1.65s -.6s ease-in-out infinite alternate}
+ @keyframes burn{from{transform:skewX(-3deg) scaleY(.94);opacity:.8}to{transform:skewX(4deg) scaleY(1.08);opacity:1}}
+ }
+ </style>
+</defs>
+<ellipse cx="263" cy="236" rx="245" ry="205" fill="url(#light)"/>
+<path class="flame" d="M100 358c-38-73 9-112 46-147 13 35 8 44 18 60 13-115 95-129 97-223 47 51 66 103 44 162 34-22 44-51 47-85 63 80 112 161 61 235z" fill="url(#flare)"/>
+<path class="inner" d="M240 350c-12-59 43-79 61-124 21 30 18 53 13 66 21-10 31-29 35-47 34 37 45 76 21 105z" fill="#ffdc78"/>
+<g transform="rotate(-29 250 224)">
+ <path d="M187 150h140l-19 203q-52 29-102 0z" fill="url(#wrap)" stroke="#ffdc9f" stroke-width="3"/>
+ <ellipse cx="257" cy="151" rx="70" ry="39" fill="#fff0c9"/>
+ <ellipse cx="257" cy="151" rx="58" ry="30" fill="#753b28"/>
+ <path d="M206 151q24-32 48-11 18-30 41-6l15 20q-31 26-93 14z" fill="#a5532e"/>
+ <path d="m216 157 24-13 20 10 27-14 14 15m-75 13 18-9 22 8 20-11" fill="none" stroke="#e8924c" stroke-width="8" stroke-linecap="round"/>
+ <path d="M201 142q18-15 32-6m38 2q18-12 35 3m-74 32q18 8 35-2" fill="none" stroke="#a5b85b" stroke-width="7" stroke-linecap="round"/>
+ <path d="m206 218 112-30-7 82-99 22z" fill="#22181a"/>
+ <path d="m242 256 17-30h14l-9 17h16l-26 27 6-14z" fill="#ff5242"/>
+ <path d="M220 304l83-14m-80 33 78-15" stroke="#7a422d" stroke-opacity=".38" stroke-width="4" stroke-linecap="round"/>
+</g>
+</svg>
